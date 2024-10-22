@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+  }
+  p {
+    color: rgb(255, 146, 21);
+}
+ @keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+ }
+ @keyframes disappear{
+    from{
+        opacity: 1;
+        scale: 1;
+
+    }to{
+        opacity: 0;
+        scale: 0.5;
+    }
+ }
+html{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 50px ;
+}
+div{
+    /* scroll-snap-align: start; */
+}
+#container-p5{
+z-index: -1;
+position: fixed;
+top: 0px;
+left: 0px;
+margin: 0 px;
+
+}
+
+.block{
+    /* vertical-align: middle; */
+    /* border-width: 5px; */
+    /* border-style: solid; */
+    display: table;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    top: 0px;
+left: 0px;
+animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0% cover 50%;
+
+}
+
+#title{
+    color: rgb(255, 210, 86);
+}
+#Tarot{
+    color: rgba(255, 210, 86, 0.903);
+    font-size: 18px
+}
+#name {
+	color: rgb(255, 210, 86);
+	font-family: "Edu AU VIC WA NT Hand";
+    font-size: 55px;
+   margin-top: -25px;
+   margin-bottom: -25px;
+   
+}
+.banner{
+    z-index: 100;
+    display: block;
+    position: sticky;
+  
+    top: 0px;
+left: 0px;
+    height: 100px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 210, 86); */
+    margin: -10px;
+    
+    background-image: linear-gradient(rgba(155, 98, 0, 0.712), rgba(255, 255, 255, 0))
+}
+#bannerh1 {
+    color: rgb(255, 210, 86);
+	font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    margin: auto;
+    margin-left: 20px;
+    text-align: top;
+   
+}
+#bannerp1{
+    margin-top: -10px;
+    
+    font-family: "Homemade Apple", cursive;
+}
+
+#starttext {
+
+color: rgb(255, 210, 86);
+font-weight: 100;
+font-size: 30px;
+
+}
+#endtext {
+
+    color: rgb(255, 210, 86);
+    font-weight: 100;
+    font-size: 15px;
+    
+    }
+
+
+
+.Muse {
+    width: 50%;
+    height: fit-content;
+    min-width: 500px;
+    display:table-cell;;
+    /* border-width: 5px; */
+    /* border-style: solid; */
+    border-color: rgb(255, 210, 86);
+    vertical-align: middle;
+    
+
+}
+#video{
+    border-radius: 10px
+}
+#video:hover{
+    transition: box-shadow .3s;
+box-shadow: 0px 0px 30px rgba(163, 125, 37, 0.475),10px 10px 30px rgb(0, 0, 0);
+}
+
+.pagetextbox{
+    display:table-cell;
+    padding: 7%;
+    min-width: 500px;
+    /* border-width: 5px; */
+    /* border-style: solid; */
+    border-color: rgb(255, 210, 86);
+    /* margin: auto; */
+    vertical-align: middle
+}
+
+#video {
+    position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    object-fit: cover;
+     /* min-width: 500px; */
+}
